@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:latihanflutter/tugas/tugas.dart';
+import 'package:latihanflutter/tugas/tugas2.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Tugas1());
+    return MaterialApp(home: Tugas2());
   }
 }
