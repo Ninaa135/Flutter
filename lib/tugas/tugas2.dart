@@ -64,7 +64,7 @@ class Tugas2 extends StatelessWidget {
                   child: SizedBox(
                     width: 300,
                     height: 300,
-                    child: Image.asset("gambar/002.png"
+                    child: Image.asset("gambar/002.png",
                     fit: BoxFit.contain,
                     ),
                   ),
