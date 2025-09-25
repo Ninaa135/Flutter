@@ -1,6 +1,0 @@
-Text("Lets Explore Our Diversity",
-            style: TextStyle(
-              fontSize: 48,
-              fontWeight: FontWeight.bold
-            ),
-            ),
