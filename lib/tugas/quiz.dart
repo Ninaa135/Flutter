@@ -24,7 +24,9 @@ class Quiz extends StatelessWidget {
             width: 400,
             height: 200,
             decoration: BoxDecoration(
-              color: Colors.purpleAccent,
+              gradient: LinearGradient(
+              colors: [Colors.purple, const Color.fromARGB(255, 247, 229, 250)],
+              ),
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20),
                 topRight: Radius.circular(150),
