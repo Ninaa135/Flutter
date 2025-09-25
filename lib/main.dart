@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:latihanflutter/tugas/tugas2.dart';
+import 'package:latihanflutter/latihan/pages/page_1.dart';
+import 'package:latihanflutter/latihan/pages/page_2.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -10,6 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Tugas2());
+    return MaterialApp(
+      routes: {
+        "/" :(context)=>Page1(),
+        "/halaman2":(context)=>Page2()
+      },
+      initialRoute: "/",
+      // home: Page1()
+      );
   }
 }
