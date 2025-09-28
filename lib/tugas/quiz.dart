@@ -6,42 +6,61 @@ class Quiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text("Training",
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
+      body: Container(
+        padding: const EdgeInsets.all(15),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              "Training",
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 40),
+            Text(
+              "Your Program",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
-          Text("Your Program",
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w500
-            ),
-            ),
-          Container(
-            width: 400,
-            height: 200,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-              colors: [Colors.purple, const Color.fromARGB(255, 247, 229, 250)],
+            SizedBox(height: 20),
+            Container(
+              width: 390,
+              height: 160,
+              decoration: BoxDecoration(
+                color: Colors.purpleAccent,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(100),
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
+                )
               ),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20),
-                topRight: Radius.circular(150),
-                bottomLeft: Radius.circular(20),
-                bottomRight: Radius.circular(20))
-            ),            
-          ),
-        Align(alignment: Alignment(0, 0),
-        child: Image.asset("gambar/card.jpg",
-        height: 200,
-        width: 400,
-        fit: BoxFit.contain,
+              child: Padding(
+                padding: const EdgeInsets.all(15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [Text("Next Workout", style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white),),
+                    Text("Lets Toning", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),),
+                    Text("and Glutes Workout", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),),
+                    SizedBox(height: 30,),
+                    Text("60 min", style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white),)],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 40),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Image.asset("gambar/card.jpg",
+                fit: BoxFit.contain,)
+              ],
+            )
+          ],
         ),
-        ),
-        ],
       ),
     );
   }

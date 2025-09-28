@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihanflutter/latihan/pages/page_1.dart';
-import 'package:latihanflutter/latihan/pages/page_2.dart';
+// import 'package:latihanflutter/latihan/pages/page_1.dart';
+// import 'package:latihanflutter/latihan/pages/page_2.dart';
 import 'package:latihanflutter/tugas/quiz.dart';
 
 
