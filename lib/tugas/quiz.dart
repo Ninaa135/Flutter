@@ -51,13 +51,25 @@ class Quiz extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 40),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Image.asset("gambar/card.jpg",
-                fit: BoxFit.contain,)
-              ],
+            SizedBox(
+              width: 600,
+              height: 160,
+              child: Stack(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(image: DecorationImage(image: AssetImage("gambar/card.jpg"),
+                    ),
+                    ),
+                  ),
+                  Align(
+                    child: Container(
+                      decoration: BoxDecoration(image: DecorationImage(image: AssetImage("gambar/figure.png"),
+                      ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             )
           ],
         ),
