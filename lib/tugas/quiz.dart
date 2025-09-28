@@ -16,15 +16,15 @@ class Quiz extends StatelessWidget {
               "Training",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 30),
             Text(
               "Your Program",
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             Container(
               width: 400,
-              height: 160,
+              height: 150,
               decoration: BoxDecoration(
                 color: Colors.purpleAccent,
                 borderRadius: BorderRadius.only(
@@ -44,7 +44,7 @@ class Quiz extends StatelessWidget {
                     children: [Text("Next Workout", style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white),),
                     Text("Lets Toning", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),),
                     Text("and Glutes Workout", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),),
-                    SizedBox(height: 30,),
+                    SizedBox(height: 20,),
                     Text("60 min", style: TextStyle(fontWeight: FontWeight.normal, color: Colors.white),)],
                     ),
                   ],
@@ -87,29 +87,31 @@ class Quiz extends StatelessWidget {
                           )
                         )
                         ),
-                        SizedBox(height: 30),
                       ],
                     ),
-                    Text("Area of Focus",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(height: 15),
-                        Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.all(10),
-                              child: Image.asset("gambar/ex3.png",
-                              width: 190,
-                              fit: BoxFit.contain,),
-                            ),
-                            Image.asset("gambar/ex4.png",
-                            width: 190,
-                            fit: BoxFit.contain,)
-                          ],
-                        )
                   ],
                 ),
               ),
+            ),
+            SizedBox(height: 20),
+            Text("Area of Focus",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 10),
+            Row(
+              children: [
+                Container(
+                    margin: EdgeInsets.only(right: 10),
+                    child: Image.asset("gambar/ex3.png",
+                    height: 120),
+                  ),
+                
+                Container(
+                  margin: EdgeInsets.only(left: 10),
+                  child: Image.asset("gambar/ex4.png",
+                  height: 120),
+                )
+              ],
             )
           ],
         ),
