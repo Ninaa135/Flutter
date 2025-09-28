@@ -23,7 +23,7 @@ class Quiz extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Container(
-              width: 390,
+              width: 400,
               height: 160,
               decoration: BoxDecoration(
                 color: Colors.purpleAccent,
@@ -51,24 +51,24 @@ class Quiz extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              width: 600,
-              height: 160,
-              child: Stack(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(image: DecorationImage(image: AssetImage("gambar/card.jpg"),
+            Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: SizedBox(
+                width: 600,
+                height: 160,
+                child: Stack(
+                  children: [
+                    Image.asset("gambar/card.jpg",
+                    width: 400,
+                    fit: BoxFit.contain,
                     ),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Image.asset("gambar/figure.png",
+                      fit: BoxFit.contain,)
                     ),
-                  ),
-                  Align(
-                    child: Container(
-                      decoration: BoxDecoration(image: DecorationImage(image: AssetImage("gambar/figure.png"),
-                      ),
-                      ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           ],
