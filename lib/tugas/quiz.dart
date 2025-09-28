@@ -54,8 +54,8 @@ class Quiz extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 30),
               child: SizedBox(
-                width: 600,
-                height: 160,
+                width: 400,
+                height: 100,
                 child: Stack(
                   children: [
                     Image.asset("gambar/card.jpg",
@@ -70,11 +70,22 @@ class Quiz extends StatelessWidget {
                           width: 100,
                           height: 100,
                           fit: BoxFit.contain,)
+                          
                         ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [Text("You are doing great", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.lightBlue),)],
+                        Expanded(child: Center(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text("You are doing great",
+                              style: TextStyle(fontWeight: FontWeight.bold, color: Colors.lightBlue),),
+                              Text("keep it up",
+                              style: TextStyle(color: Colors.grey),),
+                              Text("stick to your plan",
+                              style: TextStyle(color: Colors.grey),)
+                            ],
+                          )
+                        )
                         )
                       ],
                     ),
