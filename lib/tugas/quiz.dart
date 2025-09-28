@@ -52,7 +52,7 @@ class Quiz extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 20),
+              padding: const EdgeInsets.only(top: 30),
               child: SizedBox(
                 width: 600,
                 height: 160,
@@ -62,10 +62,21 @@ class Quiz extends StatelessWidget {
                     width: 400,
                     fit: BoxFit.contain,
                     ),
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: Image.asset("gambar/figure.png",
-                      fit: BoxFit.contain,)
+                    Row(
+                      children: [
+                        Align(
+                          alignment: Alignment.topLeft,
+                          child: Image.asset("gambar/figure.png",
+                          width: 100,
+                          height: 100,
+                          fit: BoxFit.contain,)
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [Text("You are doing great", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.lightBlue),)],
+                        )
+                      ],
                     ),
                   ],
                 ),
