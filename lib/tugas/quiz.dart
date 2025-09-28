@@ -86,9 +86,27 @@ class Quiz extends StatelessWidget {
                             ],
                           )
                         )
-                        )
+                        ),
+                        SizedBox(height: 30),
                       ],
                     ),
+                    Text("Area of Focus",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(height: 15),
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(10),
+                              child: Image.asset("gambar/ex3.png",
+                              width: 190,
+                              fit: BoxFit.contain,),
+                            ),
+                            Image.asset("gambar/ex4.png",
+                            width: 190,
+                            fit: BoxFit.contain,)
+                          ],
+                        )
                   ],
                 ),
               ),
